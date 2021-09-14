@@ -14,13 +14,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Queue queue = new Queue(5);
+        Queue queue = new Queue(100);
         int m = sc.nextInt();
         while (m != 0){
-            if (queue.isFull()){
-                int p = queue.get();
-                System.out.println("Queue is full: " + p);
-            }
+            
             queue.append(m);
             m = sc.nextInt();
         }
