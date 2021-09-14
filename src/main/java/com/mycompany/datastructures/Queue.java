@@ -32,6 +32,10 @@ public class Queue {
         return v;
     }
     
+    public int peek(){
+        return values[head];
+    }
+    
     public boolean isEmpty(){
         return elem == 0;
     }
